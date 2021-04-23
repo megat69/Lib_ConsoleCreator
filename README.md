@@ -3,6 +3,8 @@ Python lib that makes creating a console a simple task !
 
 This lib enables you to create a console where the user can input commands, with features such as command aliases, automatic help generation, and much, much more !
 
+***Note :** for every import, you might need to import `console_creator.main` instead of `console_creator`.*
+
 ## Install
 ### Install from PyPI
 To install the library, just type `pip install console_creator` and this should be ok.
