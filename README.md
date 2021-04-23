@@ -7,7 +7,9 @@ This lib enables you to create a console where the user can input commands, with
 
 ## Install
 ### Install from PyPI
-To install the library, just type `pip install console_creator` and this should be ok.
+To install the library, just type `pip install python-console-creator` and this should be ok.
+
+Visit [PyPI](https://pypi.org/project/python-console-creator/) for more info.
 
 ### Install from source
 Just download the file at [this link](https://github.com/megat69/Lib_ConsoleCreator/blob/main/src/console_creator/main.py), and import it in your project.
