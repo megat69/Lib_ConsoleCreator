@@ -1,4 +1,4 @@
-from src.console_creator.main import *
+from src.console_creator import *
 
 def test_command():
 	print("I am just a testing function. Nothing else.")
@@ -56,5 +56,8 @@ only_call_me_once_command = Command(
 	"only_call_me_once", only_call_me_once_1, "ONLY CALL IT ONCE !", help_args_msg=False
 )
 console.add_command(only_call_me_once_command)
+
+# Generated in place
+console.add_command("test_fx", lambda: print("test_fx"), description="A function to test in-place command creation.")
 
 console.launch()

@@ -3,8 +3,6 @@ Python lib that makes creating a console a simple task !
 
 This lib enables you to create a console where the user can input commands, with features such as command aliases, automatic help generation, and much, much more !
 
-***Note :** for every import, you might need to import `console_creator.main` or `console_creator.console_creator` instead of `console_creator`.*
-
 ## Install
 ### Install from PyPI
 To install the library, just type `pip install python-console-creator` and this should be ok.
@@ -12,7 +10,7 @@ To install the library, just type `pip install python-console-creator` and this 
 Visit [PyPI](https://pypi.org/project/python-console-creator/) for more info.
 
 ### Install from source
-Just download the file at [this link](https://github.com/megat69/Lib_ConsoleCreator/blob/main/src/console_creator/main.py), and import it in your project.
+Just download the file at [this link](https://github.com/megat69/Lib_ConsoleCreator/blob/main/src/console_creator/__init__.py), and import it in your project.
 
 ## Usage
 *See [examples](https://github.com/megat69/Lib_ConsoleCreator/tree/main/examples) if wanted.*
@@ -57,9 +55,11 @@ This method allows you to add new commands to the console.
 
 *The most important commands should be added first, as they will be checked in the order in which they have been added.<br/>The later you add a command, the further it is situated in the commands list, the longest it takes. (It is just a matter of milliseconds, still)*
 
-**/!\\ An exception will be raised if you tryto create two commands with the same name. /!\\**
+**/!\ An exception will be raised if you try to create two commands with the same name. /!\ **
 
-This method takes as argument an instance of the `Command` class, which is described just below.
+This method takes as argument an instance of the `Command` class, which is described just below.<br/>
+Otherwise, a command will be created in place, but will no longer be capable of being modified.<br/>
+This method, even though is working and will be maintained, is not recommended.
 
 ### The `Command` class
 This class is the class that composes a command.
